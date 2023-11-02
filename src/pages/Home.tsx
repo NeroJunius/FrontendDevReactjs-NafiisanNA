@@ -64,7 +64,6 @@ export default function MainPage() {
                 if (isOpen === false) {
                   return item;
                 }
-
                 return item.service === true;
               })
               .map((resto) => {

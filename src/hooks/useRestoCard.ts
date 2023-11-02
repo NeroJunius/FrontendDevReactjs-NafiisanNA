@@ -8,7 +8,6 @@ export function useFetchResto() {
     async function getRestoCard() {
         try {
             const Response = await API.get('/');
-            
             console.log(Response.data);
             setRestoCard(Response.data);
         } catch (error) {

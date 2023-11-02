@@ -13,11 +13,10 @@ import {
   useDisclosure,
 } from "@chakra-ui/react";
 import React from "react";
-import { Rating } from "react-simple-star-rating";
+import Rating from "./Rating"
 
 export default function DetailResto(props: IRestoCard) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const handleRating = () => {}
   const finalRef = React.useRef(null);
   return (
     <>
@@ -33,7 +32,7 @@ export default function DetailResto(props: IRestoCard) {
           <ModalBody>
             <Image src={props.resto_picture} borderRadius="lg" />
             <Text>{props.resto_description}</Text>
-            <Rating size={20} onClick={handleRating} initialValue={props.rating} readonly/>
+            <Rating rating={props.rating}/>
           </ModalBody>
 
           <ModalFooter>

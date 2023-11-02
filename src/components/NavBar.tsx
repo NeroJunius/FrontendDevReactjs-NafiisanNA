@@ -1,5 +1,5 @@
 import { useSortCategories } from "@/hooks/useSortCategories";
-import { Box, Button, Checkbox, Radio, Select, Text } from "@chakra-ui/react";
+import { Box, Button, Checkbox, Select, Text } from "@chakra-ui/react";
 
 interface INavBar {
   selectedPrice: string;
@@ -13,10 +13,10 @@ interface INavBar {
 }
 
 const rangePrice = [
-  {
-    lowest: 0,
-    highest: 1500,
-  },
+  // {
+  //   lowest: 0,
+  //   highest: 1500,
+  // },
   {
     lowest: 0,
     highest: 100,
