@@ -1,17 +1,5 @@
-import { useSortPrice } from "@/hooks/useSortPrice";
 import { useSortCategories } from "@/hooks/useSortCategories";
-import { ChevronDownIcon } from "@chakra-ui/icons";
-import {
-  Box,
-  Button,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Radio,
-  Select,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Button, Radio, Select, Text } from "@chakra-ui/react";
 
 interface INavBar {
   selectedPrice: string;
@@ -56,7 +44,6 @@ const rangePrice = [
 ];
 
 export default function NavBar(_props: INavBar) {
-  // const { selectedPrice, setSortPrice, getSelectedPrice } = useSortPrice();
   const {
     selectedCategories,
     setSortCategories,

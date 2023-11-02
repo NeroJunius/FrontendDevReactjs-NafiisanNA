@@ -17,7 +17,7 @@ import { Rating } from "react-simple-star-rating";
 
 export default function DetailResto(props: IRestoCard) {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const handleRating = (rate) => {}
+  const handleRating = () => {}
   const finalRef = React.useRef(null);
   return (
     <>

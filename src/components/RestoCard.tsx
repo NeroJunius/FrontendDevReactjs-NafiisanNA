@@ -3,21 +3,19 @@ import {
   Text,
   Grid,
   GridItem,
-  Button,
   Card,
   CardBody,
   CardFooter,
   Divider,
   Heading,
   Image,
-  useDisclosure,
 } from "@chakra-ui/react";
 import { IRestoCard } from "../interfaces/restaurants";
 import DetailResto from "./DetailResto";
 import { Rating } from "react-simple-star-rating";
 
 export default function RestoCard(props: IRestoCard) {
-  const handleRating = (rate) => {}
+  const handleRating = () => {};
   return (
     <Box display={"flex"} justifyContent={"center"} mt={10}>
       <Box className={"card"} display={"flex"} flexDirection={"column"}>
@@ -30,7 +28,12 @@ export default function RestoCard(props: IRestoCard) {
                   <Heading size="md">{props.resto_name}</Heading>
                   {/* <Rating name="read-only" value={props.rating} readOnly/> */}
                   <Box w={"100%"} flexDirection={"row"}>
-                  <Rating size={20} onClick={handleRating} initialValue={props.rating} readonly/>
+                    <Rating
+                      size={20}
+                      onClick={handleRating}
+                      initialValue={props.rating}
+                      readonly
+                    />
                   </Box>
                   <Box display={"flex"} justifyContent={"space-between"}>
                     <Box display={"flex"} flexWrap={"wrap"} gap={2}>
