@@ -1,0 +1,104 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "resto_picture": "https://media.timeout.com/images/106000654/750/422/image.jpg",
+      "resto_name": "KFC",
+      "rating": 4.5,
+      "resto_description": " KFC Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam tellus, porta at vestibulum sit amet, sagittis sit amet risus. Mauris tincidunt finibus erat et viverra. ",
+      "categories": "Mexican",
+      "price": 100,
+      "service": true
+    },
+    {
+      "id": 2,
+      "resto_picture": "https://media.cntraveler.com/photos/5a930fcaa876ae5cfa61c86b/master/pass/Il-Ristorante-Luca-Fantin_2018_Il-Ristorante-Luca-Fantin_night.jpg",
+      "resto_name": "Restaurant 2",
+      "rating": 4,
+      "resto_description": "Restaurant 2 Lorem ipsum dolor sit amet Donec quis erat vitae mi maximus tempor vitae ut elit. Curabitur feugiat dolor a odio imperdiet, nec feugiat sem bibendum. Maecenas mattis arcu non elit feugiat venenatis. ",
+      "categories": "Japanese",
+      "price": 600,
+      "service": false
+    },
+    {
+      "id": 3,
+      "resto_picture": "https://bdc2020.o0bc.com/wp-content/uploads/2022/05/Coquette-by-Josh-Jamison-627568873aa86-scaled.jpg",
+      "resto_name": "Restaurant 3",
+      "rating": 4,
+      "resto_description": "Restaurant 3 Lorem ipsum dolor sit amet Ut vel dui erat. Aenean posuere tincidunt odio, id gravida ex gravida quis. Pellentesque pellentesque leo non purus lacinia, at tempus nisl pretium. Nullam varius ultricies dolor non dignissim.",
+      "categories": "SteakHouses",
+      "price": 450,
+      "service": false
+    },
+    {
+      "id": 4,
+      "resto_picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Barbieri_-_ViaSophia25668.jpg/1200px-Barbieri_-_ViaSophia25668.jpg",
+      "resto_name": "Restaurant 4",
+      "rating": 5,
+      "resto_description": "Restaurant 4 lorem ipsum dolor sit amet Pellentesque vehicula nulla nec felis pulvinar eleifend",
+      "categories": "Thai",
+      "price": 950,
+      "service": true
+    },
+    {
+      "id": 5,
+      "resto_picture": "https://media.timeout.com/images/106000654/750/422/image.jpg",
+      "resto_name": "Restaurant 5",
+      "rating": 5,
+      "resto_description": "Restaurant 5 lorem ipsum dolor sit amet Etiam rhoncus sem id lacus mattis luctus. Morbi mollis nibh non dolor scelerisque, vel molestie enim viverra.",
+      "categories": "Seafood",
+      "price": 370,
+      "service": false
+    },
+    {
+      "id": 6,
+      "resto_picture": "https://hips.hearstapps.com/hmg-prod/images/dsc01939-1638289406.jpg",
+      "resto_name": "Restaurant 6",
+      "rating": 5,
+      "resto_description": "Restaurant 6 lorem ipsum dolor sit amet In hac habitasse platea dictumst",
+      "categories": "Italian",
+      "price": 400,
+      "service": true
+    },
+    {
+      "id": 7,
+      "resto_picture": "https://www.travelandleisure.com/thmb/Jw-KKDrA6z1nvDJbr5kyKJSG4vk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-oiji-mi-NEWNYCDINE0223-8c392080598d44dbafdbc87bbcf4d7dd.jpg",
+      "resto_name": "Restaurant 7",
+      "rating": 5,
+      "resto_description": "Restaurant 7 lorem ipsum dolor sit amet Morbi erat est, venenatis eu tempus elementum, tincidunt nec risus. Ut velit nibh, elementum eget nulla eget, venenatis sagittis urna.",
+      "categories": "Seafood",
+      "price": 780,
+      "service": false
+    },
+    {
+      "id": 8,
+      "resto_picture": "https://assets.architecturaldigest.in/photos/64f84cc61d4896b633fba77a/master/w_1600%2Cc_limit/The%2520art%2520deco%2520inspired%2520de%25CC%2581cor%2520of%2520CIRQA%25201960%2520.jpg",
+      "resto_name": "Restaurant 8",
+      "rating": 3,
+      "resto_description": "Restaurant 8 lorem ipsum dolor sit amet Morbi erat est, venenatis eu tempus elementum, tincidunt nec risus.",
+      "categories": "Seafood",
+      "price": 530,
+      "service": true
+    },
+    {
+      "id": 9,
+      "resto_picture": "https://media1.citybeat.com/citybeat/imager/the-25-best-restaurants-in-greater-cincinnati-right-now-according-to-yelp/u/zoom/14734515/bakerstable_hb-4234.jpg?cb=1693342577",
+      "resto_name": "Restaurant 9",
+      "rating": 3,
+      "resto_description": "Restaurant 9 lorem ipsum dolor sit amet Ut velit nibh, elementum eget nulla eget, venenatis sagittis urna.",
+      "categories": "SteakHouses",
+      "price": 630,
+      "service": false
+    },
+    {
+      "id": 10,
+      "resto_picture": "https://www.timeoutdubai.com/cloud/timeoutdubai/2023/06/06/Sushisamba.jpg",
+      "resto_name": "Restaurant 10",
+      "rating": 3,
+      "resto_description": "Restaurant 10 lorem ipsum dolor sit amet Ut velit nibh, elementum eget nulla eget, venenatis sagittis urna.",
+      "categories": "Thai",
+      "price": 99,
+      "service": false
+    }
+  ]
+}
