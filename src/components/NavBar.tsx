@@ -44,12 +44,7 @@ const rangePrice = [
 ];
 
 export default function NavBar(_props: INavBar) {
-  const {
-    selectedCategories,
-    setSortCategories,
-    getCategories,
-    categoriesList,
-  } = useSortCategories();
+  const { categoriesList } = useSortCategories();
 
   return (
     <>
