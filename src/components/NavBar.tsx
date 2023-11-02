@@ -1,5 +1,5 @@
 import { useSortCategories } from "@/hooks/useSortCategories";
-import { Box, Button, Radio, Select, Text } from "@chakra-ui/react";
+import { Box, Button, Checkbox, Radio, Select, Text } from "@chakra-ui/react";
 
 interface INavBar {
   selectedPrice: string;
@@ -67,66 +67,22 @@ export default function NavBar(_props: INavBar) {
             w={40}
             h={10}
           >
-            <Radio
+            {/* <Radio
               colorScheme={"green"}
               isChecked={_props.isOpen!}
               onChange={() => _props.setIsOpen()}
             >
               <Text>Open Now</Text>
-            </Radio>
-          </Box>
-          {/* price */}
-          {/* <Menu closeOnSelect={true}>
-            <MenuButton
-              as={Button}
-              rightIcon={<ChevronDownIcon />}
-              variant="outline"
-              w={40}
+            </Radio> */}
+            <Checkbox
+              colorScheme={"green"}
+              isChecked={_props.isOpen!}
+              onChange={() => _props.setIsOpen()}
             >
-              <Text fontSize={"14px"} textAlign={"left"} isTruncated>
-                {getSelectedPrice() ? getSelectedPrice() : "Price"}
-              </Text>
-            </MenuButton>
-            <MenuList>
-              <MenuItem
-                onClick={() => setSortPrice("under $100")}
-                className={selectedPrice === "under $100" ? "active" : ""}
-              >
-                <Text color={"black"}>under $100</Text>
-              </MenuItem>
-              <MenuItem
-                onClick={() => setSortPrice("$100 - $300")}
-                className={selectedPrice === "$100 - $300" ? "active" : ""}
-              >
-                <Text color={"black"}>$100 - $300</Text>
-              </MenuItem>
-              <MenuItem
-                onClick={() => setSortPrice("$300 - $500")}
-                className={selectedPrice === "$300 - $500" ? "active" : ""}
-              >
-                <Text color={"black"}>$300 - $500</Text>
-              </MenuItem>
-              <MenuItem
-                onClick={() => setSortPrice("$500 - $700")}
-                className={selectedPrice === "$500 - $700" ? "active" : ""}
-              >
-                <Text color={"black"}>$500 - $700</Text>
-              </MenuItem>
-              <MenuItem
-                onClick={() => setSortPrice("$700 - $900")}
-                className={selectedPrice === "$700 - $900" ? "active" : ""}
-              >
-                <Text color={"black"}>$700 - $900</Text>
-              </MenuItem>
-              <MenuItem
-                onClick={() => setSortPrice("above $900")}
-                className={selectedPrice === "above $900" ? "active" : ""}
-              >
-                <Text color={"black"}>above $900</Text>
-              </MenuItem>
-            </MenuList>
-          </Menu> */}
-
+              <Text>Open Now</Text>
+            </Checkbox>
+          </Box>
+        
           <Select
             w={40}
             onChange={(e) =>

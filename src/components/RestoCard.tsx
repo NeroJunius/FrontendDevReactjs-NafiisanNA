@@ -12,7 +12,8 @@ import {
 } from "@chakra-ui/react";
 import { IRestoCard } from "../interfaces/restaurants";
 import DetailResto from "./DetailResto";
-import { Rating } from "react-simple-star-rating";
+// import { Rating } from "react-simple-star-rating";
+import { MdStar } from "react-icons/md";
 
 export default function RestoCard(props: IRestoCard) {
   const handleRating = () => {};
@@ -23,18 +24,13 @@ export default function RestoCard(props: IRestoCard) {
           <GridItem w="100%">
             <Card maxW="sm" shadow={"md"}>
               <CardBody>
-                <Image src={props.resto_picture} borderRadius="lg" />
+                <Image src={props.resto_picture} borderRadius="lg" fit={"cover"} />
                 <Box mt={6} gap={3} display={"flex"} flexDirection={"column"}>
                   <Heading size="md">{props.resto_name}</Heading>
-                  {/* <Rating name="read-only" value={props.rating} readOnly/> */}
-                  <Box w={"100%"} flexDirection={"row"}>
-                    <Rating
-                      size={20}
-                      onClick={handleRating}
-                      initialValue={props.rating}
-                      readonly
-                    />
+                  <Box as={MdStar} color="orange.400">
+                    <Text as ="span">{props.rating}</Text>
                   </Box>
+                
                   <Box display={"flex"} justifyContent={"space-between"}>
                     <Box display={"flex"} flexWrap={"wrap"} gap={2}>
                       <Text fontSize={"sm"} color="black">

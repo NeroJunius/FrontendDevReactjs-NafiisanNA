@@ -9,7 +9,8 @@ import { useState } from "react";
 export default function MainPage() {
   const restoCard = useFetchResto();
   const { selectedPrice, getSelectedPrice } = useSortPrice();
-  const { selectedCategories, getCategories } = useSortCategories();
+  const { selectedCategories, getCategories } =
+    useSortCategories();
 
   const [isOpen, setisOpen] = useState<boolean | null>(null);
   const [rangePrice, setrangePrice] = useState({

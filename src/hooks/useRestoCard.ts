@@ -7,8 +7,9 @@ export function useFetchResto() {
 
     async function getRestoCard() {
         try {
-            const Response = await API.get("/restaurants");
-            console.log(API, Response.data);
+            const Response = await API.get('/');
+            
+            console.log(Response.data);
             setRestoCard(Response.data);
         } catch (error) {
             console.error("Getting data failed", error)
