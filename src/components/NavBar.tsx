@@ -13,10 +13,10 @@ interface INavBar {
 }
 
 const rangePrice = [
-  // {
-  //   lowest: 0,
-  //   highest: 1500,
-  // },
+  {
+    lowest: 0,
+    highest: 1500,
+  },
   {
     lowest: 0,
     highest: 100,
@@ -67,13 +67,6 @@ export default function NavBar(_props: INavBar) {
             w={40}
             h={10}
           >
-            {/* <Radio
-              colorScheme={"green"}
-              isChecked={_props.isOpen!}
-              onChange={() => _props.setIsOpen()}
-            >
-              <Text>Open Now</Text>
-            </Radio> */}
             <Checkbox
               colorScheme={"green"}
               isChecked={_props.isOpen!}

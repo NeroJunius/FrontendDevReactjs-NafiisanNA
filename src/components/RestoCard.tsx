@@ -25,11 +25,17 @@ export default function RestoCard(props: IRestoCard) {
                 <Image
                   src={props.resto_picture}
                   borderRadius="lg"
-                  fit={"contain"}
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",       
+                    height: "100%",     
+                  }}
+                  maxH={130}
+                  maxW={250}
                 />
                 <Box mt={6} gap={3} display={"flex"} flexDirection={"column"}>
                   <Heading size="md">{props.resto_name}</Heading>
-                  <Rating rating={props.rating}/>
+                  <Rating rating={props.rating} />
                   <Box display={"flex"} justifyContent={"space-between"}>
                     <Box display={"flex"} flexWrap={"wrap"} gap={2}>
                       <Text fontSize={"sm"} color="black">
