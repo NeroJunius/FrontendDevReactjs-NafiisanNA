@@ -15,10 +15,6 @@ interface INavBar {
 const rangePrice = [
   {
     lowest: 0,
-    highest: 1500,
-  },
-  {
-    lowest: 0,
     highest: 100,
   },
   {
@@ -58,9 +54,11 @@ export default function NavBar(_props: INavBar) {
         mt={6}
       >
         <Box className="left" py={3} gap={5} display={"flex"}>
-          <Text fontSize={"lg"}>Filter By:</Text>
+          <Text fontSize={"lg"} color={"color"}>
+            Filter By:
+          </Text>
           <Box
-            border={"1px solid"}
+            border={"1px solid black"}
             borderRadius={"5px"}
             py={2}
             px={2}
@@ -72,20 +70,29 @@ export default function NavBar(_props: INavBar) {
               isChecked={_props.isOpen!}
               onChange={() => _props.setIsOpen()}
             >
-              <Text>Open Now</Text>
+              <Text color={"black"}>Open Now</Text>
             </Checkbox>
           </Box>
-        
+
           <Select
             w={40}
-            onChange={(e) =>
-              _props.setSortPrice(
-                rangePrice.filter((rate) => rate.lowest === +e.target.value)[0]
-              )
-            }
+            color={"black"}
+            onChange={(e) => {
+              const selectedValue = +e.target.value;        
+              if (selectedValue === 0) {              
+                _props.setSortPrice({ lowest: 0, highest: 1500 });
+              } else {
+                _props.setSortPrice(
+                  rangePrice.find((rate) => rate.lowest === selectedValue)!
+                );
+              }
+            }}
           >
+            <option key="all" value="0">
+              Price
+            </option>
             {rangePrice.map((rate) => (
-              <option key={rate.toString()} value={rate.lowest}>
+              <option key={rate.lowest.toString()} value={rate.lowest}>
                 ${rate.lowest} - ${rate.highest}
               </option>
             ))}
@@ -94,7 +101,15 @@ export default function NavBar(_props: INavBar) {
           {/* category */}
           <Select
             w={60}
-            onChange={(e) => _props.setSortCategories(e.target.value)}
+            color={"black"}
+            onChange={(e) => {
+              const selectedCategories = e.target.value;
+              if (selectedCategories === "Categories") {
+                _props.setSortCategories("");
+              } else {
+                _props.setSortCategories(selectedCategories);
+              }
+            }} 
           >
             {categoriesList.map((category) => (
               <option key={category} value={category}>

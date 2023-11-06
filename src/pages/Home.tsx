@@ -15,7 +15,7 @@ export default function MainPage() {
   const [isOpen, setisOpen] = useState<boolean | null>(null);
   const [rangePrice, setrangePrice] = useState({
     lowest: 0,
-    highest: 0,
+    highest: 1500,
   });
   const [category, setCategory] = useState("");
   console.log(category, rangePrice);
