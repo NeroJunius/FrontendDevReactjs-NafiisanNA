@@ -18,7 +18,12 @@ export default function MainPage() {
     highest: 1500,
   });
   const [category, setCategory] = useState("");
-  console.log(category, rangePrice);
+   const [itemsToDisplay, setItemsToDisplay] = useState(8); // Number of items to display
+
+  // Function to increment the number of items to display
+  const loadMoreItems = () => {
+    setItemsToDisplay((prev) => prev + 8);
+  };  
 
   return (
     <>
@@ -66,6 +71,7 @@ export default function MainPage() {
                 }
                 return item.service === true;
               })
+              .slice(0, itemsToDisplay)
               .map((resto) => {
                 return (
                   <RestoBody
@@ -84,11 +90,13 @@ export default function MainPage() {
               })}
           </Box>
         </Box>
+        {restoCard.length > itemsToDisplay && (
         <Center mt={10}>
-          <Button variant={"solid"} colorScheme={"blue"} width={60}>
+          <Button variant={"solid"} colorScheme={"blue"} width={60} onClick={loadMoreItems}>
             LOAD MORE
           </Button>
         </Center>
+        )}
       </Box>
     </>
   );
